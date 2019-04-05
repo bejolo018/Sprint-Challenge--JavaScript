@@ -18,7 +18,7 @@ const calculator = function(num1, num2, cb){
 */
 
 function add(a, b){
-  return (a + b)
+  return (a + b);
 }
 
 function multiply(a, b){
@@ -26,11 +26,11 @@ function multiply(a, b){
 }
 
 function greeting(a, b){
-  return `Hello ${a} ${b}, nice to meet you!`
+  return `Hello ${a} ${b}, nice to meet you!`;
 }
 
 function consume(a, b, cb){
-  return cb(a, b)
+  return cb(a, b);
 }
 
 
