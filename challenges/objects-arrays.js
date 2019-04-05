@@ -101,13 +101,31 @@ console.log(contactInfo);
 const uni = [];
 
 for (let i = 0; i < graduates.length; i++) {
-  if (graduates[i].university == "Uni"){
+  if (graduates[i].university.includes("Uni")){
     uni.push(graduates[i]);
   }
 }
 
 console.log(uni);
 
+// ==== Closures ==== 
+
+// Explain in your own words why `nestedfunction()` can access the variable `internal`.
+
+// Explanation: Closures allow internal functions to accept external information internally.
+
+
+const external = "I'm outside the function";
+
+function myFunction() {
+  console.log(external);
+  const internal = "Hello! I'm inside myFunction!";
+
+  function nestedFunction() {
+    console.log(internal);
+  };
+  nestedFunction();
+}
 
 // ==== ADVANCED Array Methods ====
 
